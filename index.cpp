@@ -33,5 +33,18 @@ int main()
     cout << (4 | 8) << endl;
     cout << (4 << 4) << endl;
     cout << (4 >> 4) << endl;
+
+     for(int i = 0; i<size/2; i++){
+        int temp = arr[size - (i  + 1)];
+        cout<<temp<<"temp"<<endl;
+        arr[size -i] = arr[i];
+        cout<<arr[size -i]<<"last element"<<endl;
+        arr[i] = temp;
+        cout<<arr[i]<<"first index"<<endl;
+    };
+    // cout<<arr<<endl;
+    for(int i = 0; i<size; i++){
+        cout<<arr[i]<<" ";
+    };
     return 0;
 }
