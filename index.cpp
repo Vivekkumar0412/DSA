@@ -33,7 +33,8 @@ int main()
     cout << (4 | 8) << endl;
     cout << (4 << 4) << endl;
     cout << (4 >> 4) << endl;
-
+    int size = 10;
+    int arr[size] = {8,2,3,4,5,6,7,8,9,6,20}; 
      for(int i = 0; i<size/2; i++){
         int temp = arr[size - (i  + 1)];
         cout<<temp<<"temp"<<endl;
