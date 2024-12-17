@@ -1,4 +1,5 @@
 #include <iostream>
+#include<vector>
 using namespace std;
 int convertBinary(int num)
 {
@@ -47,5 +48,16 @@ int main()
     for(int i = 0; i<size; i++){
         cout<<arr[i]<<" ";
     };
+    vector<int> num;
+   num.push_back(59);
+   num.push_back(69);
+   num.push_back(79);
+   num.push_back(79);
+   num.push_back(79);
+   num.push_back(79);
+   for(int val : num){
+       cout<<val<<" ";
+   }
+ 
     return 0;
 }
