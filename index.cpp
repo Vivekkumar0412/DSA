@@ -49,6 +49,20 @@ int majorityElement(int arr[], int size)
     };
     return ans;
 }
+int sumOfNums(int arr[], int size){
+    int sum = 0;
+    for(int i = 0; i<size; i++){
+        sum += arr[i];
+    };
+    return sum;
+}
+int productOfArr(int arr[], int size){
+    int product = 1;
+    for(int i = 0; i<size; i++){
+        product*=arr[i];
+    };
+    return product;
+}
 void swapMin(int arr[], int size){
     int min = 99999999;
     int max = 0;
