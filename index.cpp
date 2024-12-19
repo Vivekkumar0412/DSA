@@ -49,6 +49,27 @@ int majorityElement(int arr[], int size)
     };
     return ans;
 }
+void swapMin(int arr[], int size){
+    int min = 99999999;
+    int max = 0;
+    for(int i = 0; i<size; i++){
+        if(arr[i] < min){
+            min = i;
+        }
+    };
+    for(int i = 0; i<size; i++){
+        if(arr[i] > max){
+            max = i;
+        }
+    };
+    swap(arr[min],arr[max]);
+    for(int i = 0; i<size; i++){
+        cout<<arr[i]<<" "<<endl;
+    }
+    cout<<max<<" max"<<endl;
+    cout<<min<<" min"<<endl;
+}
+
 int main()
 {
     cout << convertBinary(10) << endl;
@@ -99,5 +120,6 @@ int main()
     int arr3[] = {1, 2, 3, 5, 6, 7, 8, 9, 0, 5, 5, 5, 5, 3};
     int size3 = 14;
     cout << majorityElement(arr3, size3) << " major" << endl;
+    swapMin(arr,size);
     return 0;
 }
