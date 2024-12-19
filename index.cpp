@@ -26,6 +26,29 @@ int sumOfNumber(int num)
     };
     return ans;
 };
+int majorityElement(int arr[], int size)
+{
+    int ans = 0;
+    int count = 0;
+    int lc = 0;
+    for (int i = 0; i < size; i++)
+    {
+        count = 0;
+        for (int j = 0; j < size; j++)
+        {
+            if (arr[i] == arr[j])
+            {
+                count++;
+            }
+        };
+        if (lc < count)
+        {
+            lc = count;
+            ans = arr[i];
+        }
+    };
+    return ans;
+}
 int main()
 {
     cout << convertBinary(10) << endl;
@@ -73,5 +96,8 @@ int main()
     cout << num.back() << endl;
     cout << num.at(4) << endl;
     cout << num[4] << endl;
+    int arr3[] = {1, 2, 3, 5, 6, 7, 8, 9, 0, 5, 5, 5, 5, 3};
+    int size3 = 14;
+    cout << majorityElement(arr3, size3) << " major" << endl;
     return 0;
 }
