@@ -54,6 +54,9 @@ int sumOfNums(int arr[], int size){
     for(int i = 0; i<size; i++){
         sum += arr[i];
     };
+    for(int i = 0; i<size; i++){
+        sum += arr[i];
+    };
     return sum;
 }
 int productOfArr(int arr[], int size){
